@@ -1,5 +1,5 @@
 NFT MARKETPLACE
-
+![plot](./website.png)
 It is NFT marketplace where prople can buy and sell NFT   
 So the website has 3 pages 
 ->Home page where all trading of NFT takesplace 
