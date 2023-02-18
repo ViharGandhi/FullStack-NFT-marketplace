@@ -1,0 +1,16 @@
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 686px;
+}
+/* body {
+    background-image: url("./imagefile//galaxy-7040416__480.webp");
+} */
+body {
+    background-color: #010101;
+    color: #f0f0f0;
+}
+  

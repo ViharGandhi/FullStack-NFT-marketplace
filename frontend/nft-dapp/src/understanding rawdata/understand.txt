@@ -1,0 +1,24 @@
+   const[token,usetoken] = useState('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU1NzIyNzNFMkUyOTJDMzVGMGVCRDgyQjhDZEM1MTE5N0M3ODQ0ODUiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzYwMTc1NDMxNjQsIm5hbWUiOiJmaXJzdCJ9.rdkBSEp2vZs3W_9mj7eZaDJqjizOwbq3nlsGr-_sUXM')
+  const handleClick = async () => {
+    
+    const client = new Web3Storage({token})
+
+    const jsonString = JSON.stringify();
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    // Create a new client instance
+    const files = [
+        new File([blob], 'hello.json')
+    ]
+    const cid  = await client.put(files,{})
+    console.log(cid)
+      
+      
+  };
+  const handleaxios = async ()=>{
+    try{
+        let response = await axios.get("https://bafybeicl3bitbcshi5kdk3zukbma5xuhxn7er4tsczxy5aeetgpu6ckyie.ipfs.dweb.link/hello.json")
+        console.log(response.data)
+    }catch(error){
+        console.log(error)
+    }
+  }
