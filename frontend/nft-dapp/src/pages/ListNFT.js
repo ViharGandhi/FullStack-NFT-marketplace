@@ -36,8 +36,8 @@ function ListNFT() {
     const[formdata,setFormdata] = useState({name:'',description:'',price:''});
     const[files,setFile] = useState([])
     const[filemap,setFilemap] = useState({default:"none"}); 
-    const[Filename,setFilename] = useState('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU1NzIyNzNFMkUyOTJDMzVGMGVCRDgyQjhDZEM1MTE5N0M3ODQ0ODUiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzYwMTc1NDMxNjQsIm5hbWUiOiJmaXJzdCJ9.rdkBSEp2vZs3W_9mj7eZaDJqjizOwbq3nlsGr-_sUXM')
-    const[token,setToken] = useState('web3 API')
+    const[Filename,setFilename] = useState('')
+    const[token,setToken] = useState('YOUR WEB3 API')
     const StoreOnBlockChain = async(metadataurl)=>{
         console.log(metadataurl)
         const provider = new ethers.providers.Web3Provider(window.ethereum);
