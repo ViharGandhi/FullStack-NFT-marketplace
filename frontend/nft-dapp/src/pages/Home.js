@@ -100,18 +100,3 @@ function Home() {
 }
 
 export default Home;
-/*
-  {data.map((url, index) => (
-        <div className="nft">
-        <div className="nft-container">
-        <h2 key={index}>{url.title}</h2>
-        <div className="nft1">
-        <img key={index} src={url.image} alt={`Image ${index}`}height='100px' width='100px'/>
-        </div>
-        <p key={index}>{url.description}</p>
-        <p key={index}><strong>{url.price + " " +"eth"}</strong></p>
-        </div>
-        </div>
-      ))}
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">{url.price}<img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=024" alt="" height='10px' width='10px'/></button>
-*/
